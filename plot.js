@@ -12,10 +12,10 @@ d3.json("data/data.json").then((incomingData) => {
   console.log(filteredMovies);
 
   // Use the map method with the arrow function to return all the filtered movie titles.
-  var titles = filteredMovies.map(movies =>  movies.title);
+  var titles = filteredMovies.map(movie =>  movie.title);
 
   // Use the map method with the arrow function to return all the filtered movie metascores.
-  var ratings = filteredMovies.map(movies => movies.metascore);
+  var ratings = filteredMovies.map(movie => movie.metascore);
 
   // Check your filtered metascores.
   console.log(ratings);
